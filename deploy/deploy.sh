@@ -3,7 +3,7 @@
 
 set -e
 
-if [ "$TRAVIS_BRANCH" != "master" -o -n "$TRAVIS_TAG" -o "$TRAVIS_PULL_REQUEST" != "false" ]; then
+if [ "$TRAVIS_BRANCH" != "stable" -o -n "$TRAVIS_TAG" -o "$TRAVIS_PULL_REQUEST" != "false" ]; then
   echo -e "\e[36m\e[1mNot building for a stable branch push - building without deploying."
   yarn run build
   exit 0
