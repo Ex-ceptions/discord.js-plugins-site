@@ -3,7 +3,7 @@
 
 set -e
 
-if [ "$TRAVIS_BRANCH" != "website" -o -n "$TRAVIS_TAG" -o "$TRAVIS_PULL_REQUEST" != "false" ]; then
+if [ "$TRAVIS_BRANCH" != "master" -o -n "$TRAVIS_TAG" -o "$TRAVIS_PULL_REQUEST" != "false" ]; then
   echo -e "\e[36m\e[1mNot building for a stable branch push - building without deploying."
   yarn run build
   exit 0
@@ -12,7 +12,7 @@ fi
 echo -e "\e[36m\e[1mBuilding for a stable branch push - building and deploying."
 
 # Initialise some useful variables
-REPO=`git config remote.origin.url`
+REPO="git@github.com:NbOpposite/discord.js-plugins.git"
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
