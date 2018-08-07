@@ -32,7 +32,7 @@ git clone $REPO dist -b $TARGET_BRANCH
 
 # Build the site
 yarn run build
-cp LICENCE dist
+cp LICENSE dist
 
 # Commit and push
 cd dist
