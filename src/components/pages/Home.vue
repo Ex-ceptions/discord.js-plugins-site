@@ -2,7 +2,7 @@
   <div id="home">
     <slide id="jumbotron">
       <logo :light="true" :konami="konami" id="logo" />
-      <code>npm install git+https://github.com/NbOpposite/discord.js-plugins.git</code><br />
+      <code>npm install NbOpposite/discord.js-plugins</code><br />
     </slide>
 
     <section id="info">
