@@ -1,6 +1,6 @@
-# discord.js-site
+# discord.js-plugins-site
 
-> The website housing documentation for discord.js
+> The website housing documentation for discord.js-plugins
 
 ## Build Setup
 
