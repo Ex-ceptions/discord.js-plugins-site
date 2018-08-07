@@ -10,7 +10,7 @@ script:
   - bash ./deploy/deploy.sh
 env:
   global:
-    - ENCRYPTION_LABEL: "d9d8d4fbc4cd"
+    - ENCRYPTION_LABEL: "f07324357685"
     - COMMIT_AUTHOR_EMAIL: "admin@opposite.biz"
 dist: trusty
 sudo: false
