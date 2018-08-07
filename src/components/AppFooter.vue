@@ -1,8 +1,8 @@
 <template>
   <footer>
     <container>
-      <strong><router-link to="/">discord.js</router-link></strong>
-      <p>A powerful library for interacting with the Discord API</p>
+      <strong><router-link to="/">discord.js-plugins</router-link></strong>
+      <p>A plugin framework for the <a href="https://discord.js.org/#/">discord.js</a> library</p>
       <stats />
       <a href="" id="dark-mode-link" @click="toggleDarkMode">
         <em class="fa" :class="darkMode ? 'fa-sun-o' : 'fa-moon-o'"></em>

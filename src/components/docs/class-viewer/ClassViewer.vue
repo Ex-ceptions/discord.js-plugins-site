@@ -4,7 +4,7 @@
 
     <h1>{{ clarse.name }}</h1>
     <p class="class-name-extra">
-      <span v-if="clarse.extends">extends <type-link :type="clarse.extends" :docs="docs" /></span>
+      <span v-if="clarse.extends">extends <type-link-with-generic :type="clarse.extends" :docs="docs" /></span>
       <span v-if="clarse.implements">implements <type-link :type="clarse.implements" :docs="docs" /></span>
     </p>
     <span v-if="clarse.abstract" class="badge class-badge" title="This class is abstract, and may not be instantiated itself.">Abstract</span>
@@ -37,6 +37,7 @@
 <script>
   import Vue from 'vue';
   import TypeLink from '../TypeLink.vue';
+  import TypeLinkWithGeneric from '../TypeLinkWithGeneric.vue';
   import ParamTable from './ParamTable.vue';
   import Overview from './Overview';
   import Property from './Property';
@@ -51,6 +52,7 @@
     props: ['docs', 'showPrivate', 'darkMode'],
     components: {
       TypeLink,
+      TypeLinkWithGeneric,
       ParamTable,
       Overview,
       Property,

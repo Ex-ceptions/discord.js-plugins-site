@@ -2,50 +2,36 @@
   <div id="home">
     <slide id="jumbotron">
       <logo :light="true" :konami="konami" id="logo" />
-      <code>npm install discord.js</code><br />
+      <code>npm install git+https://github.com/NbOpposite/discord.js-plugins.git</code><br />
     </slide>
 
     <section id="info">
       <div class="info-item">
         <h2>About</h2>
         <p>
-          discord.js is a powerful <a href="https://nodejs.org/">node.js</a> module that allows you to interact with the
-          <a href="https://discordapp.com/developers/docs/intro">Discord API</a> very easily.
-          It takes a much more object-oriented approach than most other JS Discord libraries, making your bot's code significantly tidier and easier to comprehend.
+          discord.js-plugins is an extension of the powerful <a href="https://discord.js.org/#/">discord.js</a> library that enables you to organize and compartmentalize
+          features of your bot quite easily.
+          discord.js-plugins is not meant for managing or similar, but for keeping features that are not commands similarly organized to <a href="https://discord.js.org/#/docs/commando/master/general/welcome">Commando</a>.
         </p>
         <p>
-          Usability, consistency, and performance are key focuses of discord.js, and it also has nearly 100% coverage of the Discord API.
-          It receives new Discord features shortly after they arrive in the API.
+          discord.js-plugins aims to be user friendly and keep the managing aspect of modules and dependencies out of your way so you can focus on implementation
+          of features rather than managing the structure and loading of such.
         </p>
       </div>
 
       <div class="info-item">
         <h2>Example</h2>
-        <pre><code class="javascript" v-hljs>const Discord = require('discord.js');
-const client = new Discord.Client();
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
-  }
-});
-
-client.login('token');</code></pre>
+        <pre><code class="javascript" v-hljs>
+          //Coming Soon or something
+          </code></pre>
       </div>
 
       <div class="info-item">
-        <h2>Why?</h2>
+        <h2>Key features</h2>
         <p>
           <ul>
-            <li>Object-oriented</li>
-            <li>Speedy and efficient</li>
-            <li>Feature-rich</li>
-            <li>Flexible</li>
-            <li>100% Promise-based</li>
+            <li>Injectable - add plugins to your existing project without much hassle</li>
+            <li>When I figure out why, I'll let you know...</li>
           </ul>
         </p>
       </div>
@@ -55,12 +41,11 @@ client.login('token');</code></pre>
         <p>
           <stats />
         </p>
-        <p class="center">...and growing!</p>
       </div>
 
       <div class="full-info-item">
         <router-link to="/docs" class="big-ass-btn">Get started</router-link>
-        <a href="https://discord.gg/bRCvFy9" class="big-ass-btn discord">Discord</a>
+        <a href="https://discord.gg/BxR6YKb" class="big-ass-btn discord">Discord</a>
       </div>
     </section>
   </div>

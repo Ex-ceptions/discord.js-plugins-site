@@ -7,9 +7,16 @@
 
 <script>
   import MainSource from '../../data/MainSource';
-  import CommandoSource from '../../data/CommandoSource';
-  import RPCSource from '../../data/RPCSource';
   import DocsNavbar from '../docs/Navbar.vue';
+
+  const sources = {
+    [MainSource.id]: MainSource,
+  };
+  
+  if (process.env.NODE_ENV !== 'production') {
+    const LocalSource = require('../../data/LocalSource').default;
+    sources[LocalSource.id] = LocalSource;
+  }
 
   export default {
     name: 'documentation',
@@ -20,11 +27,7 @@
 
     data() {
       return {
-        sources: {
-          [MainSource.id]: MainSource,
-          [CommandoSource.id]: CommandoSource,
-          [RPCSource.id]: RPCSource,
-        },
+        sources,
         source: MainSource,
         tag: MainSource.defaultTag,
       };

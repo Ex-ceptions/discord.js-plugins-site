@@ -74,6 +74,7 @@
             Buffer: 'https://nodejs.org/dist/latest/docs/api/buffer.html#buffer_class_buffer',
             ReadableStream: 'https://nodejs.org/dist/latest/docs/api/stream.html#stream_class_stream_readable',
             ChildProcess: 'https://nodejs.org/dist/latest/docs/api/child_process.html#child_process_class_childprocess',
+            TypedArray: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray',
           };
 
           // Add links for everything
