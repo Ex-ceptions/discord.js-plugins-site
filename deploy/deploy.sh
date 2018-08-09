@@ -12,7 +12,7 @@ fi
 echo -e "\e[36m\e[1mBuilding for a stable branch push - building and deploying."
 
 # Initialise some useful variables
-REPO="git@github.com:NbOpposite/discord.js-plugins.git"
+REPO="git@github.com:djs-plugins/discord.js-plugins.git"
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
