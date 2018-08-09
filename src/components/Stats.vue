@@ -29,10 +29,10 @@
         for (const item of res.body.downloads) data.downloads += item.downloads;
         data.downloads = data.downloads.toLocaleString();
       });
-      request.get('https://api.github.com/repos/NbOpposite/discord.js-plugins').end((err, res) => {
+      request.get('https://api.github.com/repos/djs-plugins/discord.js-plugins').end((err, res) => {
         if (!err) data.stars = res.body.stargazers_count.toLocaleString();
       });
-      request.get('https://api.github.com/repos/NbOpposite/discord.js-plugins/stats/contributors').end((err, res) => {
+      request.get('https://api.github.com/repos/djs-plugins/discord.js-plugins/stats/contributors').end((err, res) => {
         if (!err) data.contributors = res.body.length.toLocaleString();
       });
 

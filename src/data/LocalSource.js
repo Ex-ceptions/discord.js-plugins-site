@@ -8,7 +8,7 @@ class LocalSource {
     this.repo = 'local';
     this.defaultTag = 'local';
     this.defaultFile = { category: 'general', id: 'welcome' };
-    this.source = `https://github.com/NbOpposite/discord.js-plugins/blob/`;
+    this.source = `https://github.com/djs-plugins/discord.js-plugins/blob/`;
     this.tags = null;
     this.recentTag = null;
   }
